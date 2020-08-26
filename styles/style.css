@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Norican&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+body {
+  border: 0;
+  margin: 0;
+  padding: 1.25rem 0 3rem 0;
+  background-color: #306B34;
+  border-image: url(img/floral_border.png) 50 50 0 50 round;
+  border-image-width: 2.5rem 3.125rem 0px 3.125rem;
+  min-height: 50rem;
+}
+
+#react-container {
+  margin: 0rem 10rem;
+}
+#react-container > h1 {
+  font-family: "Norican", cursive;
+  text-align: center;
+  font-size: 4.2em;
+  color: #ACECA1;
+  margin-bottom: 1.5rem;
+}
+
+.boxes {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  background-color: #ACECA1;
+  border: 2px outset #E0FCE0;
+  font-size: 1rem;
+}
+.boxes .box-headings {
+  font-size: 1.2em;
+  font-family: "Lato", sans-serif;
+  margin-left: 0.3rem;
+  color: #306B34;
+}
+.boxes .text-container {
+  display: block;
+  margin: 0 auto 1rem;
+  padding: 2px 3px;
+  width: 99%;
+  font-family: monospace;
+  font-size: 1.1em;
+  color: #11270B;
+  background-color: #E0FCE0;
+  border-radius: 0.3rem;
+}
+
+#editor-container {
+  margin-top: 0rem;
+}
+#editor-container #editor {
+  min-height: 15rem;
+  resize: vertical;
+}
+
+#preview-container {
+  margin-top: 3rem;
+}
+
+#preview pre, #preview code {
+  background-color: #11270B;
+  color: #E0FCE0;
+}
+#preview pre {
+  padding: 5px;
+}
+#preview blockquote {
+  padding-left: 7px;
+  border-left: 2px solid #009E2C;
+}
+#preview table {
+  border-collapse: collapse;
+  margin-left: 3px;
+}
+#preview td, #preview th {
+  border: 2px solid #11270B;
+  padding: 0 5px;
+}
+#preview img {
+  width: 40%;
+}
+
+@media only screen and (min-width: 831px) and (max-width: 1150px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media only screen and (min-width: 651px) and (max-width: 830px) {
+  html {
+    font-size: 65%;
+  }
+
+  #react-container {
+    margin: 0 8rem;
+  }
+
+  .boxes {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  html {
+    font-size: 62%;
+  }
+
+  #react-container {
+    font-size: 0.8rem;
+    margin: 0 7rem;
+  }
+
+  .boxes {
+    font-size: 1.1rem;
+  }
+
+  #preview pre, #preview code {
+    overflow-x: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
